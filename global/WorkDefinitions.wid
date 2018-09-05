@@ -57,6 +57,19 @@
   ],
 
   [
+    "name" : "RestGet",
+    "parameters" : [
+        "Url" : new StringDataType(),
+        "Method" : new StringDataType()
+    ],
+    "results" : [
+        "Result" : new ObjectDataType(),
+    ],
+    "displayName" : "REST-GET",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
      "name" : "BusinessRuleTask",
      "parameters" : [
        "Language" : new StringDataType(),
