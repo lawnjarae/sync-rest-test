@@ -14,13 +14,13 @@
             <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
             <parameters/>
-            <name>Rest</name>
+            <name>RestGet</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
             <parameters/>
-            <name>RestJJJ</name>
+            <name>Rest</name>
         </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
