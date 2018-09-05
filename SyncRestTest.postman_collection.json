@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "393a622d-9466-4f20-9fe2-291ce6641205",
+		"name": "SyncRestTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start Process",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "redhatpam1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "pamAdmin",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lookup\": \"default-stateful-kie-session\",\n    \"commands\" : [ \n    {\n        \"start-process\" : {\n            \"processId\" : \"src.testing\"\n        }\n    },\n\t{\n\t\t\"get-objects\": {\n\t\t\t\"out-identifier\": \"objects\"\n\t\t}\n\t}]\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/SyncRestTest_1.0.0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"SyncRestTest_1.0.0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
