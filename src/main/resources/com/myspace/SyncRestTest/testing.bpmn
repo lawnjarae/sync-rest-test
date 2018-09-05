@@ -5,7 +5,7 @@
   <bpmn2:itemDefinition id="__2C4DEB0B-7675-4E5D-AD25-9174243B42C6_MethodInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__2C4DEB0B-7675-4E5D-AD25-9174243B42C6_UrlInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__2C4DEB0B-7675-4E5D-AD25-9174243B42C6_ResultOutputXItem" structureRef="java.lang.Object"/>
-  <bpmn2:process id="craig.testing" drools:packageName="com.myspace.craig" drools:version="1.0" name="testing" isExecutable="true">
+  <bpmn2:process id="src.testing" drools:packageName="com.myspace.SyncRestTest" drools:version="1.0" name="testing" isExecutable="true">
     <bpmn2:property id="restResponse" itemSubjectRef="_restResponseItem"/>
     <bpmn2:startEvent id="_984D8A5A-D571-4FB4-B742-9C2802B2A95B" name="">
       <bpmn2:extensionElements>
@@ -75,7 +75,7 @@
     <bpmn2:sequenceFlow id="_9B855070-67CC-4F14-9E76-D6F890591434" sourceRef="_984D8A5A-D571-4FB4-B742-9C2802B2A95B" targetRef="_2C4DEB0B-7675-4E5D-AD25-9174243B42C6"/>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_U3V90bC4Eei9dIzKpXvKaQ">
-    <bpmndi:BPMNPlane id="_U3V90rC4Eei9dIzKpXvKaQ" bpmnElement="craig.testing">
+    <bpmndi:BPMNPlane id="_U3V90rC4Eei9dIzKpXvKaQ" bpmnElement="src.testing">
       <bpmndi:BPMNShape id="_U3V907C4Eei9dIzKpXvKaQ" bpmnElement="_984D8A5A-D571-4FB4-B742-9C2802B2A95B">
         <dc:Bounds height="56.0" width="56.0" x="100.0" y="100.0"/>
       </bpmndi:BPMNShape>

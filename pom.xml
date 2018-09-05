@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
-  <artifactId>craig</artifactId>
+  <artifactId>SyncRestTest</artifactId>
   <version>1.0.0</version>
   <packaging>kjar</packaging>
-  <name>craig</name>
+  <name>SyncRestTest</name>
   <description></description>
   <dependencies>
     <dependency>
