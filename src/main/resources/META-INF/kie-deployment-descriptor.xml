@@ -12,16 +12,7 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler()</identifier>
-            <parameters>
-                <parameter xsi:type="objectModel">
-                    <resolver>mvel</resolver>
-                    <identifier>java.lang.String</identifier>
-                    <parameters>
-                        <parameter xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">classLoader</parameter>
-                    </parameters>
-                </parameter>
-            </parameters>
+            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
             <name>Rest</name>
         </work-item-handler>
     </work-item-handlers>
